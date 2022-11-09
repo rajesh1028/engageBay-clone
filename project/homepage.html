@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        #nav>img:hover,
+        #nav>div>p,
+        button,
+        #features>div {
+            cursor: pointer;
+        }
+
+        #nav {
+            padding: 20px 30px;
+            display: flex;
+            background-color: aliceblue;
+            justify-content: space-between;
+            position: fixed;
+            width: 96%;
+            height: 50px;
+            margin-top: -10px;
+        }
+
+        #nav>div {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #nav>div>button {
+            height: 40px;
+            width: 15%;
+            border: 0ch;
+            border-radius: 8px;
+        }
+
+        #nav img {
+            width: 25%;
+        }
+
+        #demo {
+            background-color: purple;
+            color: whitesmoke;
+        }
+
+        #sign {
+            background-color: orangered;
+            color: whitesmoke;
+        }
+
+        #two {
+            padding-top: 11%;
+            background-color: rgb(245, 241, 234);
+        }
+
+        #two>h1 {
+            font-size: 70px;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #two>p {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            border: 2.5px solid orangered;
+            padding: 3px;
+            width: 40%;
+            margin: auto;
+            height: 50px;
+            border-radius: 25px;
+            background-color: white;
+        }
+
+        input {
+            flex-grow: 5;
+            border: none;
+            border-radius: 25px;
+            font-size: large;
+            position: relative;
+            width: 100%;
+            background-color: white;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            border: 0ch;
+            background-color: orangered;
+            color: whitesmoke;
+            border-radius: 25px;
+            width: 40%;
+        }
+
+        #two>div {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #service>h2,
+        #service>h2+p {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #service>h2 {
+            padding: 40px;
+            font-size: 30px;
+        }
+
+        #service>h2+p {
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+
+        #data {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        #data>div {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 5%;
+            border-radius: 10px;
+        }
+
+        #data img {
+            width: 25%;
+        }
+
+        #data button {
+            border: 0ch;
+            padding: 3% 5%;
+            background-color: purple;
+            color: whitesmoke;
+            border-radius: 5px;
+            margin-top: 2%;
+        }
+
+        #data>div {
+            transition: 0.5s;
+        }
+
+        #data>div:hover {
+            transform: scale(0.9);
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex+p {
+            font-weight: bold;
+        }
+
+        .flex h3 {
+            font-size: 25px;
+        }
+
+        #batch {
+            margin-top: 5px;
+            background-color: rgb(70, 70, 138);
+            padding: 5%;
+            text-align: center;
+            color: whitesmoke;
+            border-radius: 5px;
+        }
+
+        #batch img {
+            width: 8%;
+        }
+
+        #doit>div>h2,
+        #partners>h2 {
+            text-align: center;
+            font-size: 40px;
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+
+        #doit>div>p,
+        #partners>p {
+            text-align: center;
+            font-size: 19px;
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        #features {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            text-align: center;
+        }
+
+        #features img {
+            width: 30%;
+        }
+
+        #features>div {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 5%;
+            border-radius: 10px;
+        }
+
+        #features>div {
+            transition: 0.5s;
+        }
+
+        #features>div:hover {
+            transform: scale(1.1);
+        }
+
+        #start>h2 {
+            padding-top: 50px;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #start>h1 {
+            padding-top: 20px;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            color: purple;
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <img src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg">
+        <div>
+            <p>Products</p>
+            <p>Pricing</p>
+            <p>Resources</p>
+            <p>Free Tools</p>
+            <p>Blog</p>
+            <p>Login</p>
+            <button id="demo">Free Demo</button>
+            <button id="sign">Free Signup</button>
+        </div>
+    </div>
+    <div id="two">
+        <h1>Market better. Sell faster. Support smarter</h1>
+        <p>One platform for all your Marketing, Sales, and Support teams</p>
+        <form>
+            <input type="email" placeholder="Your email address">
+            <button>Get Started</button>
+        </form>
+        <img src="https://cdn5.engagebay.com/new/assets/img/banner-image.svg" alt="">
+        <div>
+            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/neilpatel.png" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/forbs.png" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/inc.png" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/enterpreneur.png" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/techcrunch.png" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/jeffbullas.png" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/business.png" alt="">
+        </div>
+    </div>
+    <div id="service">
+        <h2>Single Solution for All Your Activities</h2>
+        <p>Identify new opportunities, convert visitors, deliver customer happiness, and more!</p>
+        <div id="data">
+            <div>
+                <div class="flex">
+                    <div>
+                        <h3>CRM Software</h3>
+                        <p>Store unlimited contacts and build stronger relationships by keeping track of all your
+                            customer
+                            details in one place
+                        </p>
+                    </div>
+                    <img src="https://cdn5.engagebay.com/new/assets/img/icons/crm.svg" alt="">
+                </div>
+                <p>POPULAR FEATURES</p>
+                <ul>
+                    <li>Contact Management</li>
+                    <li>Deal Management</li>
+                    <li>Sales Automation</li>
+                    <li>Appointment Scheduling</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            <!-- --------------------------------- -->
+            <div>
+                <div class="flex">
+                    <div>
+                        <h3>CRM Software</h3>
+                        <p>Store unlimited contacts and build stronger relationships by keeping track of all your
+                            customer
+                            details in one place
+                        </p>
+                    </div>
+                    <img src="https://cdn5.engagebay.com/new/assets/img/icons/crm.svg" alt="">
+                </div>
+                <p>POPULAR FEATURES</p>
+                <ul>
+                    <li>Contact Management</li>
+                    <li>Deal Management</li>
+                    <li>Sales Automation</li>
+                    <li>Appointment Scheduling</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            <!-- --------------------------------- -->
+            <div>
+                <div class="flex">
+                    <div>
+                        <h3>CRM Software</h3>
+                        <p>Store unlimited contacts and build stronger relationships by keeping track of all your
+                            customer
+                            details in one place
+                        </p>
+                    </div>
+                    <img src="https://cdn5.engagebay.com/new/assets/img/icons/crm.svg" alt="">
+                </div>
+                <p>POPULAR FEATURES</p>
+                <ul>
+                    <li>Contact Management</li>
+                    <li>Deal Management</li>
+                    <li>Sales Automation</li>
+                    <li>Appointment Scheduling</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            <!-- --------------------------------- -->
+            <div>
+                <div class="flex">
+                    <div>
+                        <h3>CRM Software</h3>
+                        <p>Store unlimited contacts and build stronger relationships by keeping track of all your
+                            customer
+                            details in one place
+                        </p>
+                    </div>
+                    <img src="https://cdn5.engagebay.com/new/assets/img/icons/crm.svg" alt="">
+                </div>
+                <p>POPULAR FEATURES</p>
+                <ul>
+                    <li>Contact Management</li>
+                    <li>Deal Management</li>
+                    <li>Sales Automation</li>
+                    <li>Appointment Scheduling</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="batch">
+        <h2>HAPPY CUSTOMERS SHARE GREAT REVIEWS ON G2</h2>
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_AsiaPacific_HighPerformer.svg"
+            alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Europe_HighPerformer.svg"
+            alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_HighPerformer.svg" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Small-Business_HighPerformer.svg"
+            alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_MomentumLeader_Leader.svg" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_HighPerformer.svg"
+            alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Mid-Market_HighPerformer.svg"
+            alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Small-Business_HighPerformer.svg"
+            alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/HelpDesk_EasiestAdmin_EaseOfAdmin.svg" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/OnlineFormBuilder_FastestImplementation_Small-Business_GoLiveTime.svg"
+            alt="">
+    </div>
+
+    <div id="doit">
+        <div>
+            <h2>Do It All With EngageBay</h2>
+            <p>Stop paying thousands of dollars to dozens of marketing, sales, and support software. Experience the
+                world's most affordable, unified software. EngageBay's all-in-one CRM software is the most comprehensive
+                solution for your business.
+            </p>
+        </div>
+        <div id="features">
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/automation.svg" alt="">
+                <h4>Automations</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/calling.svg" alt="">
+                <h4>Calling</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/company-management.svg" alt="">
+                <h4>Company Management</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/contact-management.svg" alt="">
+                <h4>Contact Management</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/deal-management.svg" alt="">
+                <h4>Deal Management</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-broadcast.svg" alt="">
+                <h4>Email Broadcast</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-sequences.svg" alt="">
+                <h4>Email Sequence</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-template-builder.svg"
+                    alt="">
+                <h4>Email Template Builder</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/forms.svg" alt="">
+                <h4>Forms</h4>
+            </div>
+            <div>
+                <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/help-desk.svg" alt="">
+                <h4>Help Desk</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="start">
+        <h2>Simplify Marketing, Sales, & Support with the best free</h2>
+        <h1>All-In-One CRM software</h1>
+        <form>
+            <input type="email" placeholder="Your email address">
+            <button>Get Started</button>
+        </form>
+    </div>
+
+    <div id="partners">
+        <h2>Our Integration Partners</h2>
+        <p>Stay connected to your favorite apps using EngageBay’s integrations</p>
+    </div>
+
+
+</body>
+
+<script src="./script/homepage.js"></script>
+
+</html>
