@@ -1,0 +1,48 @@
+
+*{
+    background-color: rgb(243, 236, 226);
+}
+#home {
+    width: 30%;
+    margin: 10px 34%;
+}
+
+#home:hover{
+    cursor: pointer;
+}
+
+a+p{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(133, 86, 86);
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 36%;
+    margin: auto;
+    gap: 8px;
+}
+
+form>input{
+    padding: 3%;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+#submit{
+    margin-top: 4%;
+    background-color: orangered;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+#submit:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+p{
+    margin-top: 20px;
+    text-align: center;
+}
