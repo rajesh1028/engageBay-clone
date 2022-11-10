@@ -6,253 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-
-    <style>
-        #nav>img:hover,
-        #nav>div>p,
-        button,
-        #features>div {
-            cursor: pointer;
-        }
-
-        #nav {
-            padding: 20px 30px;
-            display: flex;
-            background-color: aliceblue;
-            justify-content: space-between;
-            position: fixed;
-            width: 96%;
-            height: 50px;
-            margin-top: -10px;
-        }
-
-        #nav>div {
-            display: flex;
-            width: 60%;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #nav>div>button {
-            height: 40px;
-            width: 15%;
-            border: 0ch;
-            border-radius: 8px;
-        }
-
-        #nav img {
-            width: 25%;
-        }
-
-        #demo {
-            background-color: purple;
-            color: whitesmoke;
-        }
-
-        #sign {
-            background-color: orangered;
-            color: whitesmoke;
-        }
-
-        #two {
-            padding-top: 11%;
-            background-color: rgb(245, 241, 234);
-        }
-
-        #two>h1 {
-            font-size: 70px;
-            width: 60%;
-            margin: auto;
-            text-align: center;
-        }
-
-        #two>p {
-            font-size: 25px;
-            text-align: center;
-        }
-
-        form {
-            display: flex;
-            flex-direction: row;
-            border: 2.5px solid orangered;
-            padding: 3px;
-            width: 40%;
-            margin: auto;
-            height: 50px;
-            border-radius: 25px;
-            background-color: white;
-        }
-
-        input {
-            flex-grow: 5;
-            border: none;
-            border-radius: 25px;
-            font-size: large;
-            position: relative;
-            width: 100%;
-            background-color: white;
-        }
-
-        input:focus {
-            outline: none;
-        }
-
-        button {
-            border: 0ch;
-            background-color: orangered;
-            color: whitesmoke;
-            border-radius: 25px;
-            width: 40%;
-        }
-
-        #two>div {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-
-        #service>h2,
-        #service>h2+p {
-            width: 70%;
-            margin: auto;
-            text-align: center;
-        }
-
-        #service>h2 {
-            padding: 40px;
-            font-size: 30px;
-        }
-
-        #service>h2+p {
-            font-size: 20px;
-            padding-bottom: 30px;
-        }
-
-        #data {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        #data>div {
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            padding: 5%;
-            border-radius: 10px;
-        }
-
-        #data img {
-            width: 25%;
-        }
-
-        #data button {
-            border: 0ch;
-            padding: 3% 5%;
-            background-color: purple;
-            color: whitesmoke;
-            border-radius: 5px;
-            margin-top: 2%;
-        }
-
-        #data>div {
-            transition: 0.5s;
-        }
-
-        #data>div:hover {
-            transform: scale(0.9);
-        }
-
-        .flex {
-            display: flex;
-        }
-
-        .flex+p {
-            font-weight: bold;
-        }
-
-        .flex h3 {
-            font-size: 25px;
-        }
-
-        #batch {
-            margin-top: 5px;
-            background-color: rgb(70, 70, 138);
-            padding: 5%;
-            text-align: center;
-            color: whitesmoke;
-            border-radius: 5px;
-        }
-
-        #batch img {
-            width: 8%;
-        }
-
-        #doit>div>h2,
-        #partners>h2 {
-            text-align: center;
-            font-size: 40px;
-            width: 80%;
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 15px;
-        }
-
-        #doit>div>p,
-        #partners>p {
-            text-align: center;
-            font-size: 19px;
-            width: 70%;
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 60px;
-        }
-
-        #features {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            text-align: center;
-        }
-
-        #features img {
-            width: 30%;
-        }
-
-        #features>div {
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            padding: 5%;
-            border-radius: 10px;
-        }
-
-        #features>div {
-            transition: 0.5s;
-        }
-
-        #features>div:hover {
-            transform: scale(1.1);
-        }
-
-        #start>h2 {
-            padding-top: 50px;
-            width: 70%;
-            margin: auto;
-            text-align: center;
-        }
-
-        #start>h1 {
-            padding-top: 20px;
-            width: 70%;
-            margin: auto;
-            text-align: center;
-            color: purple;
-            margin-bottom: 30px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./css/homepage.css">
 </head>
 
 <body>
     <div id="nav">
-        <img src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg">
+        <a href="homepage.html"> <img src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg"></a>
         <div>
             <p>Products</p>
             <p>Pricing</p>
@@ -260,8 +19,8 @@
             <p>Free Tools</p>
             <p>Blog</p>
             <p>Login</p>
-            <button id="demo">Free Demo</button>
-            <button id="sign">Free Signup</button>
+            <a href="signup.html"><button id="demo">Free Demo</button></a>
+            <a href="signup.html"><button id="sign">Free Signup</button></a>
         </div>
     </div>
     <div id="two">
@@ -459,7 +218,154 @@
 
     <div id="partners">
         <h2>Our Integration Partners</h2>
-        <p>Stay connected to your favorite apps using EngageBay’s integrations</p>
+        <p>Stay connected to your favorite apps using EngageBay's integrations</p>
+    </div>
+
+    <!-- slideshow -->
+
+    <div class="slider">
+        <div class="slide_track">
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/xero.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/bulksms.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/jot.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/amazon.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/digioh.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/zapier.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/call-hippo.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/piesync.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/africaltalking.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/stripe.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/sendgrid.png" alt="logo">
+            </div>
+
+            <!-- copy the same slide again -->
+
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/xero.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/bulksms.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/jot.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/amazon.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/digioh.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/zapier.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/call-hippo.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/piesync.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/africaltalking.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/stripe.png" alt="logo">
+            </div>
+            <div class="slide">
+                <img src="https://cdn5.engagebay.com/new/assets/img/integrations/sendgrid.png" alt="logo">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- bottom page -->
+
+    <div id="bottom">
+        <div>
+            <img src="https://cdn5.engagebay.com/new/assets/img/cta-img.svg" alt="">
+        </div>
+        <div>
+            <h2>Get Started</h2>
+            <div id="input">
+                <input type="text" placeholder="Name">
+                <input type="url" placeholder="Website URL">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+            </div>
+            <button>SIGNUP FOR FREE</button>
+            <button>SCHEDULE A CALL</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <ul>
+                <h3>Attract Web Visitors</h3>
+                <li>Email Marketing</li>
+                <li>Email Templates</li>
+                <li>Email Broadcast</li>
+                <li>Email A/B Testing</li>
+                <li>RSS-to-Email</li>
+                <li>Double Opt-In Email</li>
+                <li>Autoresponder Email</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h3>Integrations</h3>
+                <li>Zapier Integration</li>
+                <li>PieSync Integration</li>
+                <li>Xero Integration</li>
+                <li>Mailgun Integration</li>
+                <li>Mandrill Integration</li>
+                <li>Postmark Integration</li>
+                <li>Sendgrid Integration</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h3>Alternatives</h3>
+                <li>Infusionsoft Alternative</li>
+                <li>Drip Alternative</li>
+                <li>ActiveCampaign Alternative</li>
+                <li>Insightly Alternative</li>
+                <li>Aweber Alternative</li>
+                <li>HubSpot Alternative</li>
+                <li>Agile CRM Alternative</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h3>Solutions</h3>
+                <li>Wordpress Plugin</li>
+                <li>Email Tracker</li>
+                <li>Real Estate CRM</li>
+                <li>CRM for Non-profits</li>
+                <li>Call Center CRM</li>
+                <li>Cloud CRM</li>
+                <li>Developers</li>
+            </ul>
+        </div>
+
     </div>
 
 

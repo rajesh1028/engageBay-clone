@@ -1,0 +1,391 @@
+#nav>img:hover,
+#nav>div>p,
+button,
+#features>div {
+    cursor: pointer;
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#nav {
+    padding: 20px 30px;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-between;
+    position: fixed;
+    width: 94.5%;
+    height: 50px;
+    margin-top: -10px;
+}
+
+#nav>div {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img {
+    width: 70%;
+}
+
+#demo {
+    height: 45px;
+    width: 120%;
+    background-color: purple;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+#sign {
+    height: 45px;
+    width: 120%;
+    background-color: orangered;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+#two {
+    padding-top: 11%;
+    background-color: rgb(245, 241, 234);
+}
+
+#two>h1 {
+    font-size: 70px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#two>p {
+    font-size: 25px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    border: 2.5px solid orangered;
+    padding: 3px;
+    width: 40%;
+    margin: auto;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+input {
+    flex-grow: 5;
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    border: 0ch;
+    background-color: orangered;
+    color: whitesmoke;
+    border-radius: 25px;
+    width: 40%;
+}
+
+#two>div {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+#service>h2,
+#service>h2+p {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#service>h2 {
+    padding: 40px;
+    font-size: 30px;
+}
+
+#service>h2+p {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+#data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#data>div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+#data img {
+    width: 25%;
+}
+
+#data button {
+    border: 0ch;
+    padding: 3% 5%;
+    background-color: purple;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+#data>div {
+    transition: 0.5s;
+}
+
+#data>div:hover {
+    transform: scale(0.9);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex+p {
+    font-weight: bold;
+}
+
+.flex h3 {
+    font-size: 25px;
+}
+
+#batch {
+    margin-top: 5px;
+    background-color: rgb(70, 70, 138);
+    padding: 5%;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+#batch img {
+    width: 8%;
+}
+
+#doit>div>h2,
+#partners>h2 {
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#doit>div>p,
+#partners>p {
+    text-align: center;
+    font-size: 19px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+#features img {
+    width: 30%;
+}
+
+#features>div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+#features>div {
+    transition: 0.5s;
+}
+
+#features>div:hover {
+    transform: scale(1.1);
+}
+
+#start>h2 {
+    padding-top: 50px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#start>h1 {
+    padding-top: 20px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: purple;
+    margin-bottom: 30px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* css for slider */
+
+/* body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+} */
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide_track {
+    display: flex;
+    width: calc(250px*22);
+    animation: scroll 45s linear infinite;
+}
+
+.slide_track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 11));
+    }
+}
+
+.slide {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slider img {
+    width: 50%;
+    border: 1px solid orangered;
+    padding: 10%;
+    border-radius: 8px;
+}
+
+.slider img:hover {
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgb(236, 147, 147) 0%,
+            rgba(231, 21, 21, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 1;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/* bottom section */
+
+#bottom {
+    background-color: rgb(95, 95, 242);
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#bottom>div>img {
+    width: 150%;
+}
+
+#bottom h2{
+    color: whitesmoke;
+}
+
+#bottom>div:nth-child(2)>#input>input{
+      border-radius: 8px;
+      padding: 1.5% 1%;
+      height: 100%;
+}
+
+#input{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+#bottom>div:nth-child(2)>button{
+    padding: 2% 1%;
+    border-radius: 8px;
+}
+#bottom>div:nth-child(2){
+    margin-left: -5%;
+}
+
+#bottom{
+    margin-top: 10%;
+}
+
+#bottom+div{
+    background-color: rgb(95, 95, 242);
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    color: floralwhite;
+}
+
+#bottom+div li{
+    list-style: none;
+    padding: 5px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bottom+div h3{
+    font-size:larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
