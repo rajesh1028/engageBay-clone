@@ -43,3 +43,23 @@ let login=document.querySelector("#login")
 login.addEventListener("click",function(){
     window.location.href="signin.html";
 })
+
+document.querySelector(".buttons").addEventListener("click",function(){
+    window.location.href="call.html"
+})
+
+document.querySelector(".start").addEventListener("click",function(){
+    window.location.href="call.html"
+})
+
+
+document.querySelector(".aram").addEventListener("click",function(){
+    window.location.href="call.html"
+})
+
+
+document.querySelector(".yes").addEventListener("click",function(){
+    window.location.href="call.html"
+})
+
+
