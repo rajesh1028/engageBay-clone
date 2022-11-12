@@ -162,7 +162,7 @@ button {
 }
 
 #data>div:hover {
-    transform: scale(0.9);
+    transform: scale(1.05);
 }
 
 .flex {
@@ -374,7 +374,8 @@ a {
 #bottom+div{
     background-color: rgb(95, 95, 242);
     padding-top: 3%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     justify-content: space-around;
     color: floralwhite;
 }
@@ -401,3 +402,101 @@ a {
     background-color: whitesmoke;
     color: orangered;
 }
+
+
+/* medium screen */
+
+
+@media (min-width:600px) and (max-width:999px){
+#nav{
+    display: flex;
+    flex-direction: column;
+}
+#nav img{
+    width: 25%;
+}
+#nav{
+    height:min-content;
+    padding: 0ch;
+    width: 97%;
+}
+#nav p{
+    margin: 0px 3%;
+}
+#nav>div>a{
+    margin: 0px 3%;
+}
+
+#data {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+#bottom+div{
+    background-color: rgb(95, 95, 242);
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    color: floralwhite;
+}
+
+
+}
+
+
+/* small screen */
+
+
+@media (min-width:350px) and (max-width:599px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #nav img{
+        width: 25%;
+    }
+    #nav{
+        height:min-content;
+        padding: 0ch;
+        width: 85%;
+    }
+    #nav p{
+        margin: 0px 5px;
+    }
+    #nav>div>a{
+        margin: 0px 5px;
+    }
+
+
+    #data {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    #features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
+
+    #bottom+div{
+        background-color: rgb(95, 95, 242);
+        padding-top: 3%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-around;
+        color: floralwhite;
+    }
+    
+    }
