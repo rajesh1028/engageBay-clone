@@ -21,9 +21,9 @@ function getData(event){
         })
         if(flag){
             alert("SignIn Successful")
+            window.location.href = "index.html";
         }else{
             alert("Enter Valid Credentials")
         }
-        window.location.href = "index.html";
     }
 }
