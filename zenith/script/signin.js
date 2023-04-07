@@ -24,6 +24,6 @@ function getData(event){
         }else{
             alert("Enter Valid Credentials")
         }
-        window.location.href = "homepage.html";
+        window.location.href = "index.html";
     }
 }

@@ -1,5 +1,5 @@
 document.querySelector("#image").addEventListener("click",function(){
-    window.location.href="homepage.html"
+    window.location.href="index.html"
 })
 
 
