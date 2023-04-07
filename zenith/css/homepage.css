@@ -210,6 +210,10 @@ button {
     margin-bottom: 60px;
 }
 
+#service .features {
+    width: 20%;
+}
+
 #features {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
